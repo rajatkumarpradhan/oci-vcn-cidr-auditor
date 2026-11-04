@@ -1,0 +1,20 @@
+{
+  "vcns": [
+    {"name": "prod-vcn", "cidr": "10.0.0.0/16", "subnets": [
+      {"name": "web", "cidr": "10.0.1.0/24"},
+      {"name": "app", "cidr": "10.0.2.0/24"},
+      {"name": "db", "cidr": "10.0.2.128/25"},
+      {"name": "lb", "cidr": "10.1.0.0/24"}
+    ]},
+    {"name": "dev-vcn", "cidr": "10.0.0.0/20", "subnets": [
+      {"name": "dev-app", "cidr": "10.0.4.0/22"}
+    ]},
+    {"name": "shared-vcn", "cidr": "192.168.0.0/24", "subnets": [
+      {"name": "tools", "cidr": "192.168.0.0/26"},
+      {"name": "agents", "cidr": "192.168.0.64/26"},
+      {"name": "ci", "cidr": "192.168.0.128/26"},
+      {"name": "edge", "cidr": "192.168.0.192/26"}
+    ]},
+    {"name": "broken-vcn", "cidr": "not-a-cidr", "subnets": []}
+  ]
+}
